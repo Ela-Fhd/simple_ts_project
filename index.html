@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>simple ts project</title>
+  </head>
+  <body class="bg-slate-800">
+    <form
+      class="bg-slate-900 rounded-md max-w-lg p-8 mx-auto mt-5 flex flex-col gap-y-5"
+      id="submit-form"
+    >
+      <input
+        type="text"
+        name="username"
+        placeholder="username..."
+        class="p-2 rounded-md bg-slate-500 text-white outline-none"
+        id="username"
+      />
+      <input
+        type="text"
+        name="email"
+        placeholder="email..."
+        class="p-2 rounded-md bg-slate-500 text-white outline-none"
+        id="email"
+      />
+      <button
+        class="bg-green-500 text-white capitalize text-center rounded-md text-lg font-bold p-1"
+      >
+        add user
+      </button>
+    </form>
+
+    <div
+      id="user-list"
+      class="text-white mx-auto my-5 flex flex-col justify-center gap-5 max-w-lg"
+    ></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
